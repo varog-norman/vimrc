@@ -33,7 +33,7 @@ set autoindent
 "set gdefault
 "set hlsearch
 "set ignorecase
-set smartcase
+"set smartcase
 "set incsearch
 "set showmatch
 
