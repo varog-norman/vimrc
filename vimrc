@@ -30,6 +30,8 @@ set expandtab
 set softtabstop=2
 set autoindent
 
+set mouse=a
+
 "set gdefault
 "set hlsearch
 "set ignorecase
@@ -44,4 +46,4 @@ map <C-e> :NERDTreeToggle<cr>
 map  <C-d> :tabn<CR>
 map  <C-a> :tabp<CR>
 map  <C-w> :tabnew<CR>
-map  <C-r> :tabc<CR>
+map  <C-f> :tabc<CR>
