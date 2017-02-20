@@ -5,39 +5,65 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 
+"Common
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'digitaltoad/vim-pug'
 Plugin 'ryanoasis/vim-devicons'
-Plugin 'vim-javascript'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Yggdroot/indentLine'
+
+"Code syntax
+Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
-Plugin 'sickill/vim-monokai'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'digitaltoad/vim-pug'
+
+"Colorscheme
+Plugin 'tomasr/molokai'
 
 call vundle#end()
 
-" To install plugins just enter :PluginInstall
+" To install plugins :PluginInstall
+" To update plugins :PluginUpdate
 
 set number
 syntax enable
 
-"set background=dark
-"colorscheme monokai
+colorscheme molokai
+"let g:molokai_original = 1
+let g:rehash256 = 1
+set background=dark
 
 set encoding=utf8
 
+set tabstop=2
+set shiftwidth=2
 set expandtab
-set softtabstop=2
 set autoindent
 
 set mouse=a
 
-"set gdefault
-"set hlsearch
-"set ignorecase
-"set smartcase
-"set incsearch
-"set showmatch
+"Indent Guide
+set list lcs=tab:\|\ 
+
+"Airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#tab_min_count = 0
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline_section_warning = ''
+let g:airline_section_error = ''
+let g:airline#extensions#tabline#show_close_button = 0
+let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline#extensions#tagbar#enabled = 0
+let g:airline#extensions#tabline#show_tab_nr = 1
+let g:airline#extensions#tabline#tab_nr_type = 1
+
+let g:airline_theme='bubblegum'
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
