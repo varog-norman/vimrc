@@ -45,6 +45,7 @@ set expandtab
 set autoindent
 
 set mouse=a
+set hlsearch
 
 "Indent Guide
 set list lcs=tab:\|\ 
@@ -69,7 +70,8 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 map <C-e> :NERDTreeToggle<cr>
-map  <C-d> :tabn<CR>
-map  <C-a> :tabp<CR>
-map  <C-w> :tabnew<CR>
-map  <C-f> :tabc<CR>
+map <C-d> :tabn<CR>
+map <C-a> :tabp<CR>
+map <C-w> :tabnew<CR>
+map <C-f> :tabc<CR>
+map <f3> :noh<CR>
