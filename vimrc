@@ -14,6 +14,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Yggdroot/indentLine'
+Plugin 'terryma/vim-multiple-cursors'
 
 "Code syntax
 Plugin 'pangloss/vim-javascript'
@@ -28,6 +29,7 @@ call vundle#end()
 
 " To install plugins :PluginInstall
 " To update plugins :PluginUpdate
+" Ti install and update :PluginInstall!
 
 set number
 syntax enable
@@ -74,4 +76,7 @@ map <C-d> :tabn<CR>
 map <C-a> :tabp<CR>
 map <C-w> :tabnew<CR>
 map <C-f> :tabc<CR>
-map <f3> :noh<CR>
+map <f3>  :noh<CR>
+map <f2>  :set ic<CR>
+map <f4>  :set noic<CR>
+
