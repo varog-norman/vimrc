@@ -62,6 +62,7 @@ set mouse=a
 
 "Indent Guide
 set list lcs=tab:\|\ 
+let g:indentLine_faster = 1
 
 "Airline
 set laststatus=2
