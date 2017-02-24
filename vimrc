@@ -23,7 +23,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'digitaltoad/vim-pug'
 
 "Colorscheme
-Plugin 'tomasr/molokai'
+Plugin 'w0ng/vim-hybrid'
 
 call vundle#end()
 
@@ -33,10 +33,10 @@ call vundle#end()
 
 set number
 syntax enable
+set noswapfile
 
 "Theme config
-colorscheme molokai
-"let g:molokai_original = 1
+colorscheme hybrid
 let g:rehash256 = 1
 set background=dark
 
@@ -79,7 +79,7 @@ let g:airline#extensions#tagbar#enabled = 0
 let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline#extensions#tabline#tab_nr_type = 1
 
-let g:airline_theme='bubblegum'
+let g:airline_theme='raven'
 
 "NerdTree config
 autocmd StdinReadPre * let s:std_in=1
