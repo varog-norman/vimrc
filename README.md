@@ -1,5 +1,7 @@
 # vimrc
 
+Install 'Vundle' https://github.com/VundleVim/Vundle.vim#quick-start
+
 Put files at '.vim' directory from your home folder
 
 To configure your vim follow the next steps:
