@@ -110,9 +110,31 @@ map <f2>  :set ic<CR>
 "Turn off case sensitive search
 map <f4>  :set noic<CR>
 
-"Switch between splitted windows using Alt+arrow key
+"Switch between splitted windows using Alt + arrow key
 nmap <silent> <A-Up> :wincmd k<CR>
 nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
+"Switch between splitted windows using Shift + arrow key (Mac)
+nmap <S-Up> :wincmd k<CR>
+nmap <S-Down> :wincmd j<CR>
+nmap <S-Left> :wincmd h<CR>
+nmap <S-Right> :wincmd l<CR>
+
+"Mac copy/paste functionality
+map <f5> :.w !pbcopy<CR><CR>
+map <f6> :r !pbpaste<CR>
+
+
+"Show hidden files at NERDTree
+"Shift + i
+
+"NERDTree reload
+"r
+
+"NERDTree menu
+"m
+
+"Multicursor (default)
+"Ctrl + n
